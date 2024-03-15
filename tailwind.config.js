@@ -31,6 +31,10 @@ module.exports = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        tertiary: {
+          DEFAULT: "hsl(var(--tertiary))",
+          foreground: "hsl(var(--tertiary-foreground))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -71,9 +75,12 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      backgroundImage: (theme) => ({
-        "hero": "url('/public/hero/hero-bg.png')",
-      }),
+      backgroundImage: {
+        hero: "url('/hero/hero-bg.png')",
+        hero_shape: "url('/hero/shape-1.svg')",
+        hero_shape2_light: "url('/hero/shape-2-light.svg')",
+        hero_shape2_dark: "url('/hero/shape-2-dark.svg')",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
