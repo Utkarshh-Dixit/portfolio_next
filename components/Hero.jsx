@@ -31,8 +31,10 @@ const Hero = () => {
 
           </div>
           <div className="hidden xl:flex relative ">
+            <Badge containerStyles="absolute top-[24px] -left-[5rem]" icon={<RiBriefcase4Fill />} endCountNum={1} badgeText="Years of experience"/>
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
-            <DevImg />
+            <DevImg containerStyles="bg-hero_shape w-[510px] h-[468px] bg-no-repeat relative bg-bottom overflow-hidden"
+            imgSrc='/hero/hehe.png'/>
           </div>
         </div>
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
