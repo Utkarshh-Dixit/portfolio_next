@@ -1,23 +1,23 @@
 'use client'
 
-import { RiYoutubeFill, RiLinkedinFill, RiGithubFill, RiFacebookFill, RiInstagramFill } from "react-icons/ri";
+import { RiTwitterFill, RiLinkedinFill, RiGithubFill, RiFacebookFill, RiInstagramFill } from "react-icons/ri";
 import Link from "next/link";
 
 const icons = [
   {
-    path:'/',
-    name: <RiYoutubeFill />, 
+    path:'https://twitter.com/Utkarshhdixit',
+    name: <RiTwitterFill />, 
   },
   {
-    path:'/',
+    path:'https://www.linkedin.com/in/Utkarshh-Dixit/',
     name: <RiLinkedinFill />, 
   },
   {
-    path:'/',
+    path:'https://github.com/Utkarshh-Dixit',
     name: <RiGithubFill />, 
   },
   {
-    path:'/',
+    path:'https://www.instagram.com/utkarshhdixit/',
     name: <RiInstagramFill />, 
   },
   {
