@@ -88,19 +88,33 @@ const About = () => {
 
                 <div className="flex-1">
                     <Tabs defaultValue="personal">
-                        <TabsList>
-                            <TabsTrigger value="personal">
+                        <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
+                            <TabsTrigger className="w-[162px] xl:w-auto " value="personal">
                                 Personal Info
                             </TabsTrigger>
-                            <TabsTrigger value="qualifications">
+                            <TabsTrigger className="w-[162px] xl:w-auto " value="qualifications">
                                 Qualifications
                             </TabsTrigger>
-                            <TabsTrigger value="skills">
+                            <TabsTrigger className="w-[162px] xl:w-auto " value="skills">
                                 Skills
                             </TabsTrigger>
                         </TabsList>
                         <div className="text-lg mt-12 xl:mt-8">
-                            <TabsContent value="personal">personal</TabsContent>
+                            <TabsContent value="personal">
+                                <div className="text-center xl:text-left">
+                                    <h3 className="h3 mb-4">Aspiring Software Developer</h3>
+                                    <p className="subtitle max-w-xl mx-auto xl:mx-0"> As a quick learner, I am committed to staying abreast of the latest technologies and methodologies, ensuring that I can adapt to the evolving needs of the industry.</p>
+
+                                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                                        {infoData.map((item, index)=>{
+                                            return <div className="flex items-center gap-x-4 mx-auto xl:mx-0" key={index}>
+                                                <div className="text-primary">{item.icon}</div>
+                                                <div>{item.text}</div>
+                                                </div>
+                                        })}
+                                    </div>
+                                </div>
+                            </TabsContent>
                         <TabsContent value="qualifications">qualifications</TabsContent>
                         <TabsContent value="skills">skills</TabsContent>
                         </div>
