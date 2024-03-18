@@ -178,22 +178,23 @@ const About = () => {
                             <TabsContent value="skills">
                                 <div className="text-center xl:text-left">
                                     <h3 className="h3 mb-8 ">Tools I Use Everyday</h3>
-                                    <div>
+                                    <div className="mb-16">
                                         <h4 className="text-xl font-semibold mb-2">Skills</h4>
                                         <div className="border-b border-border mb-4 "></div>
                                         {/* Skill list */}
-                                        <div className="flex flex-row gap-x-6">
+                                        <div>
                                             {getData(skillData, 'Skills').data.map((item, index)=>{
-                                                return <div className="flex flex-col mt-4 w-2/4 text-center">
-                                                    <h5 className="text-lg font-semibold mb-2">{item.title}</h5>
-                                                    <div className="grid grid-cols gap-x-2">
-                                                        {item.data.map((skill, index)=>{
-                                                            return <div key={index} className="text-muted-foreground">{skill}</div>
-                                                        })}
-                                                    </div>
-                                                    </div>
+                                                const {title, data} = item;
+                                                return <div className="w-1/2 text-center xl:text-left mx-auto xl:mx-0 " key={index}>
+                                                    <div className="text-primary text-[22px] mt-5">{title}</div>
+                                                    <div className="font-medium ">{data}</div>
+                                                </div>
                                             })}
                                         </div>
+                                    </div>
+                                    {/*Tools*/}
+                                    <div>
+                                        <h4 className="text-xl font-semibold mb-2 xl:text-left">Tools</h4>
                                     </div>
                                 </div>
                             </TabsContent>
