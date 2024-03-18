@@ -54,12 +54,21 @@ const qualificationData = [
 
 const skillData = [
     {
-        title: 'Languages',
-        data: ['Java', 'JavaScript']
-    },
-    {
-        title: 'Frameworks',
-        data: ['React', 'Next.js', 'Node.js', 'Express.js']
+        title: 'Skills',
+        data: [
+            {
+                title: 'Languages',
+                data: ['JavaScript', 'TypeScript', 'Java']
+            },
+            {
+                title: 'Frameworks',
+                data: ['React', 'Next.js', 'Node.js', 'Express.js']
+            },
+            {
+                title: 'Library',
+                data: ['Material-UI', 'Tailwind CSS', 'Bootstrap', 'Shadcn UI']
+            },
+        ]
     },
     {
         title: 'Tools',
@@ -133,7 +142,7 @@ const About = () => {
                                 </div>
                             </TabsContent>
                             {/* qualifications */}
-                        <TabsContent value="qualifications">
+                            <TabsContent value="qualifications">
                             <div>
                                 <h3 className="h3 mb-8 text-center xl:text-left">My awesome journey</h3>
                                 {/* education */}
@@ -165,8 +174,29 @@ const About = () => {
                                     </div>
                                     </div>
                             </div>
-                        </TabsContent>
-                        <TabsContent value="skills">skills</TabsContent>
+                            </TabsContent>
+                            <TabsContent value="skills">
+                                <div className="text-center xl:text-left">
+                                    <h3 className="h3 mb-8 ">Tools I Use Everyday</h3>
+                                    <div>
+                                        <h4 className="text-xl font-semibold mb-2">Skills</h4>
+                                        <div className="border-b border-border mb-4 "></div>
+                                        {/* Skill list */}
+                                        <div className="flex flex-row gap-x-6">
+                                            {getData(skillData, 'Skills').data.map((item, index)=>{
+                                                return <div className="flex flex-col mt-4 w-2/4 text-center">
+                                                    <h5 className="text-lg font-semibold mb-2">{item.title}</h5>
+                                                    <div className="grid grid-cols gap-x-2">
+                                                        {item.data.map((skill, index)=>{
+                                                            return <div key={index} className="text-muted-foreground">{skill}</div>
+                                                        })}
+                                                    </div>
+                                                    </div>
+                                            })}
+                                        </div>
+                                    </div>
+                                </div>
+                            </TabsContent>
                         </div>
                         
                     </Tabs>
