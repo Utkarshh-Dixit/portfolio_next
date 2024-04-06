@@ -23,7 +23,7 @@ const projectData = [
     github: '/'
   },
   {
-    image: '/work/2.png',
+    image: '/work/insta_project.png',
     category: 'MERN Stack',
     name: 'Insta-Replica',
     description: '"I have created a replica of Instagram, offering users a platform to share photos, connect, and engage with others through likes, comments, and follows.',
