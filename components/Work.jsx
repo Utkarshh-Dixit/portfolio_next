@@ -16,33 +16,33 @@ import ProjectCard from "@/components/ProjectCard";
 const projectData = [
   {
     image: '/work/1.png',
-    category: 'React js',
-    name: 'Nexa website',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.',
+    category: 'MERN Stack',
+    name: 'Kaarigar-Sathi',
+    description: 'Your trusted platform connecting users with skilled local artisans seamlessly. Empowering communities with real-time listings, secure interactions, and personalized recommendations.',
     link: '/',
     github: '/'
   },
   {
     image: '/work/2.png',
-    category: 'React js',
-    name: 'Nexa website',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.',
+    category: 'MERN Stack',
+    name: 'Insta-Replica',
+    description: '"I have created a replica of Instagram, offering users a platform to share photos, connect, and engage with others through likes, comments, and follows.',
     link: '/',
     github: '/'
   },
   {
     image: '/work/3.png',
-    category: 'MERN stack',
-    name: 'Nexa website',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.',
+    category: 'MERN Stack',
+    name: 'PinCraft: A visual discovery tool',
+    description: 'I have built a platform that enables users to discover, save, and share visual inspirations through personalized boards and collections.',
     link: '/',
     github: '/'
   },
   {
-    image: '/work/4.png',
-    category: 'Next js',
-    name: 'Nexa website',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.',
+    image: '/work/amazon_project.png',
+    category: 'ReactJS, Firebase',
+    name: 'Amazon Clone',
+    description: 'I have crafted a replica of Amazon, complete with essential shopping features and payment processing, providing users with a familiar online shopping experience',
     link: '/',
     github: '/'
   },
@@ -59,7 +59,7 @@ const Work = () => {
         </div>
 
         <div className=" xl:max-w-[1000px] xl:absolute right-0 top-0">
-          <Swiper className="h-[480px] bg-pink-100" slidesPerView={1} breakpoints={{
+          <Swiper className="h-[480px]" slidesPerView={1} breakpoints={{
             640: {
               slidesPerView: 2,
             }
