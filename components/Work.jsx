@@ -15,7 +15,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    image: '/work/1.png',
+    image: '/work/ks_project.png',
     category: 'MERN Stack',
     name: 'Kaarigar-Sathi',
     description: 'Your trusted platform connecting users with skilled local artisans seamlessly. Empowering communities with real-time listings, secure interactions, and personalized recommendations.',
