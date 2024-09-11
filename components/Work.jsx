@@ -58,10 +58,10 @@ const Work = () => {
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quae.
-            Velit inventore perferendis nostrum dolorum vero eaque corrupti
-            repellat dignissimos. Omnis labore nostrum deleniti, voluptatem vero
-            ducimus. Impedit, dolorum adipisci!
+            Discover my most recent work showcasing innovative solutions and
+            creative projects built using modern web technologies. From dynamic
+            web applications to interactive user experiences, explore how I've
+            turned ideas into reality.
           </p>
           <Link href="/projects">
             <Button>All Projects</Button>
