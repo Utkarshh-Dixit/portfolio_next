@@ -1,9 +1,8 @@
-import React from 'react'
+import Work from "@/components/Work";
+import React from "react";
 
 const Projects = () => {
-  return (
-    <div>Projects page</div>
-  )
-}
+  return <Work />;
+};
 
-export default Projects
+export default Projects;

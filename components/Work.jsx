@@ -14,6 +14,15 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
+    image: "/work/PriceWise_image.png",
+    category: "Next.js, TailwindCSS",
+    name: "Price-Wise: Your personal shopping assistant",
+    description:
+      "I have created a platform that helps users track and compare product prices across e-commerce websites, enabling them to make informed purchasing decisions.",
+    link: "https://price-wise-theta.vercel.app/",
+    github: "https://github.com/Utkarshh-Dixit/PriceWise",
+  },
+  {
     image: "/work/ks_project.png",
     category: "MERN Stack",
     name: "Kaarigar-Sathi: Where skills meet needs",
