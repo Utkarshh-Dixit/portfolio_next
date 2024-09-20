@@ -9,6 +9,8 @@ export default function ContactPage() {
     message: "",
   });
 
+  const [sendbut, setsendbut] = useState("Send message");
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await fetch("/api/contact", {
@@ -16,10 +18,13 @@ export default function ContactPage() {
       headers: {
         "Content-Type": "application/json",
       },
+      sendbut: setsendbut("Sending..."),
       body: JSON.stringify(formData),
     });
     if (res.ok) {
       alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+      setsendbut("Send message");
     } else {
       alert("Failed to send message.");
     }
@@ -52,7 +57,7 @@ export default function ContactPage() {
           className="p-2 border rounded-md"
         />
         <button type="submit" className="bg-blue-500 text-white p-2 rounded-md">
-          Send Message
+          {sendbut}
         </button>
       </form>
     </div>
